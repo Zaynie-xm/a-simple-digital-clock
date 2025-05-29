@@ -9,5 +9,9 @@
 
 程序执行后，工作指示灯LED闪动，表示程序开始执行，LED显示“00：00：00”，然后开始计时。
 
-参考电路
-![Uploading 图片1.png…]()
+Proteus软件仿真参考电路如下：  
+![图片1](https://github.com/user-attachments/assets/d99a2056-b6f4-46e8-ad0e-98b88e0e8175)  
+加载目标代码文件，打开元器件单片机属性窗口，在“Program File”栏中添加上面编译好的目标代码文件“keil-2.hex”。  
+在“Clock Frequency”栏中输入晶振频率为11.0592MHz。  
+启动仿真，按下按键1后，可发现LED停止闪烁，即时钟停止走时，时钟停在当前时刻，按下按键2和按键3后，可改变时间，按下按键4后，时钟复位到修改后的时间，时钟重新开始运转，如下页图所示。  
+![图片2](https://github.com/user-attachments/assets/df0eed61-bff5-4f3e-b692-f5c90b1a0739)
